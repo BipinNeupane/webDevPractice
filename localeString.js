@@ -13,9 +13,9 @@ document.getElementById("myButton").onclick = function afterclick() {
     currency: "INR",
   });
   document.getElementById("inRupees").innerHTML = indianRs;
-  let inKM = inputValue.toLocaleString(undefined, {
+  let inKm = inputValue.toLocaleString(undefined, {
     style: "unit",
     unit: "kilometer",
   });
-  document.getElementById("inKm").innerHTML = "You have walked " + inKM;
+  document.getElementById("inKm").innerHTML = "You have walked " + inKm;
 };
