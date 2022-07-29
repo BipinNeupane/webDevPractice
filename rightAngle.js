@@ -7,6 +7,7 @@ document.getElementById("myButton").onclick = function calculate(){
     a = document.getElementById("inputa").value;
     // converting string a into number and same for all sides
     a = Number(a);
+    console.log(a);
     b = document.getElementById("inputb").value;
     b = Number(b);
     // c = underRoot(a^2+b^2)

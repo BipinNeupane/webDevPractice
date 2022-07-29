@@ -18,4 +18,10 @@ document.getElementById("myButton").onclick = function afterclick() {
     unit: "kilometer",
   });
   document.getElementById("inKm").innerHTML = "You have walked " + inKm;
+  
+  let inUSD = inputValue.toLocaleString("en-US", {
+    style: "currency",
+    currency: "USD",
+  });
+  document.getElementById("inDollar").innerHTML = inUSD;
 };
