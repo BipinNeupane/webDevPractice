@@ -1,11 +1,10 @@
 let canvas = document.querySelector("#myCanvas");
 let context = canvas.getContext("2d");
-let button = document.getElementById("myButton");
+let appearButton = document.getElementById("myButton");
+let removeButton = document.getElementById("remove");
 
 // create a X in context
-
-
-button.onclick = () => {
+appearButton.onclick = () => {
   context.beginPath();
   context.moveTo(0, 0);
   context.lineTo(500, 500);
@@ -17,4 +16,8 @@ button.onclick = () => {
   context.lineTo(500, 250);
   context.lineWidth = 5;
   context.stroke();
+};
+
+removeButton.onclick = () => {
+  context.clearRect(0, 0, canvas.width, canvas.height);
 };
